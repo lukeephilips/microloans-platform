@@ -1,0 +1,38 @@
+<div class="container">
+  <div>
+    <h3>Add New Project</h3>
+
+    <label>Title </label>
+    <input #newTitle>
+
+    <label>Description</label>
+    <textarea #newDescription></textarea>
+
+    <label>Borrower</label>
+    <input #newBorrower>
+
+    <label>Total Amount </label>
+    <input #newTotalAmount type="number">
+
+    <label>Image</label>
+    <input #newImg>
+
+    <label>Region</label>
+    <select #newRegion class="select drop-down input-field">
+      <option value="Africa">Africa</option>
+      <option value="India">India</option>
+      <option value="LatinAmerica">Latin America</option>
+      <option value="SEAsia">SE Asia</option>
+      <option value="SouthAmerica">South America</option>
+      <option value="Asia">Asia</option>
+    </select>
+
+    <label>Category</label>
+    <select class="select drop-down input-field" #newCategory>
+      <option value="Agriculture">Agriculture</option>
+      <option value="Retail" selected>Retail</option>
+      <option value="FoodService">Food Service</option>
+    </select>
+    <button class="btn" (click)="submitForm(newTitle.value, newBorrower.value, newTotalAmount.value, newCategory.value, newRegion.value, newImg.value, newDescription.value)">Add</button>
+  </div>
+</div>

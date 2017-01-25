@@ -11,3 +11,6 @@
   border: 2px solid darkgreen;
   border-radius: 8px;
 }
+.select{
+  display: inline-block;
+}
