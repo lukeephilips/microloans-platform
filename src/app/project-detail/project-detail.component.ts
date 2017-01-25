@@ -22,12 +22,17 @@ export class ProjectDetailComponent implements OnInit {
   ngOnInit() {
     this.route.params.forEach((urlParameters) =>{
       this.projectKey = urlParameters['key']
+      this.projectToDisplay = this.projectService.getProjectByKey(this.projectKey);
+      console.log(this.projectToDisplay)
     });
-    this.projectToDisplay = this.projectService.getProjectByKey(this.projectKey);
+  }
+  calcPercent(total:any, funded:any){
+    return funded/total*600;
+  }
+  lendMoney(amount: number){
+    console.log(amount);
     console.log(this.projectToDisplay)
   }
-  calcPercent(funded, total){
-    return funded / total *100
-  }
+
 
 }

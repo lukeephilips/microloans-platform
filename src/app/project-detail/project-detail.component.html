@@ -1,23 +1,39 @@
 <div class="container">
-  <h2></h2>
+  <div class="row">
+    <h2 class="card-title">{{(projectToDisplay | async)?.title}}</h2>
+  </div>
+  <div class="row">
+    <div class="">
+      <img class="float-left" src="{{(projectToDisplay | async)?.img}}">
+    </div>
+    <div class="">
+      <h3>Borrower: {{(projectToDisplay | async)?.borrower}}</h3>
+      <div class="">
+        <h5>Loan Amount: {{(projectToDisplay | async)?.totalLoanAmount}}</h5>
+        <h5>Category: {{(projectToDisplay | async)?.category}}</h5>
+        <h5>Region: {{(projectToDisplay | async)?.region}}</h5>
+      </div>
+    </div>
+  </div>
+  <hr>
+  <p class="description">{{(projectToDisplay | async)?.description}}</p>
+<div class="fundedContainer">
+  <div class="fundedBar" [style.width.px]="calcPercent(((projectToDisplay | async)?.totalLoanAmount),((projectToDisplay | async)?.amountFunded))">
+  </div>
+</div>
+<h6>Amount Funded: ${{(projectToDisplay | async)?.amountFunded}} of ${{(projectToDisplay | async)?.totalLoanAmount}}</h6>
+<div class="">
+
+  <!-- <select>
+    <option value="10" selected="selected">$10</option>
+    <option value="20">$20</option>
+    <option value="50">$50</option>
+  </select> -->
+  <button class="btn" (click)="lendMoney(5)">Lend $5</button>
+  <button class="btn" (click)="lendMoney(10)">Lend $10</button>
+  <button class="btn" (click)="lendMoney(20)">Lend $20</button>
+  <button class="btn" (click)="lendMoney(50)">Lend $50</button>
 
 </div>
 
-<div class="card large">
-  <div class="card-image">
-    <!-- <img src={{(projectToDisplay | async)?.img}}> -->
-    <span class="card-title">{{(projectToDisplay | async)?.title}}</span>
-  </div>
-  <div class="card-content">
-    <h3>Borrower: {{(projectToDisplay | async)?.borrower}}</h3>
-    <h4>Loan Amount: {{(projectToDisplay | async)?.totalLoanAmount}}</h4>
-    <h4>Region: {{(projectToDisplay | async)?.region}}</h4>
-    <h5>Category: {{(projectToDisplay | async)?.category}}</h5>
-    <!-- <h5>${{(projectToDisplay | async)?.amountFunded}} funded of total ${{(projectToDisplay | async)?.totalLoanAmount}}</h5> -->
-
-    <p>{{(projectToDisplay | async)?.description}}</p>
-  </div>
-  <div class="card-action">
-    <a>Fund</a>
-  </div>
 </div>
