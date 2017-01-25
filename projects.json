@@ -5,7 +5,8 @@
     "category": "agriculture",
     "region": "East Africa",
     "description": "Maximu is a 34-year-old client, married with four children, three of whom are attending school. He studied up to primary six but dropped out due to financial constraints by his parent. Maximu, after failing to continue with education, started trading in coffee and waragi. He has done this business for over 10 years. However, he found that the capital he had was not enough to expand his business and he decided to join UGAFODE for financial support and he has been taking loans from UGAFODE. He applied for a loan of 1,200,000 to buy coffee since it’s the season. Maximu thanks UGAFODE for financial support which has enabled him expand his business and meet all his family financial needs.",
-    "amountFunded": 300
+    "amountFunded": 300,
+    "img": "https://www-kiva-org-3.global.ssl.fastly.net/img/w960/f4cf9c34cd58e97ad40670e03441633d.jpg"
   }, {
   "title": "Restock retail shop",
   "borrower": "Natalia Guadalupe",
@@ -13,7 +14,8 @@
   "category": "retail",
   "region": "Latin America",
   "description": "Natalia is reuqesting a 100 USD loan to help improve her kiosk and buy additional supplies such as candies, detergent, sugar, noodles, biscuits, water, coffee, salts, soft drinks, and other things to sell. In the future, she hopes to run a bigger business and she wants to thank lenders for this opportunity.",
-  "amountFunded": 0
+  "amountFunded": 0,
+  "img": "https://www-kiva-org-2.global.ssl.fastly.net/img/w960/2749fab5c94e6066c4dfcb0705da7e08.jpg"
   }, {
   "title": "Sewing machine",
   "borrower": "Maria F",
@@ -21,15 +23,17 @@
   "category": "retail",
   "region": "Latin America",
   "description": "The path of the righteous man is beset on all sides by the iniquities of the selfish and the tyranny of evil men. Blessed is he who, in the name of charity and good will, shepherds the weak through the valley of darkness, for he is truly his brother's keeper and the finder of lost children. And I will strike down upon thee with great vengeance and furious anger those who would attempt to poison and destroy My brothers. And you will know My name is the Lord when I lay My vengeance upon thee. Now that we know who you are, I know who I am. I'm not a mistake! It all makes sense! In a comic, you know how you can tell who the arch-villain's going to be? He's the exact opposite of the hero. And most times they're friends, like you and me! I should've known way back when... You know why, David? Because of the kids. They called me Mr Glass.",
-  "amountFunded": 150
+  "amountFunded": 150,
+  "img": "https://www-kiva-org-4.global.ssl.fastly.net/img/w960/6f2a97c6ef9963c716ad8bb90ec74370.jpg"
   }, {
-  "title": "Rice",
+  "title": "Rice Farm",
   "borrower": "Tinku K",
   "totalLoanAmount": 50,
   "category": "agriculture",
   "region": "India",
   "description": "The path of the righteous man is beset on all sides by the iniquities of the selfish and the tyranny of evil men. Blessed is he who, in the name of charity and good will, shepherds the weak through the valley of darkness, for he is truly his brother's keeper and the finder of lost children. And I will strike down upon thee with great vengeance and furious anger those who would attempt to poison and destroy My brothers. And you will know My name is the Lord when I lay My vengeance upon thee. Now that we know who you are, I know who I am. I'm not a mistake! It all makes sense! In a comic, you know how you can tell who the arch-villain's going to be? He's the exact opposite of the hero. And most times they're friends, like you and me! I should've known way back when... You know why, David? Because of the kids. They called me Mr Glass.",
-  "amountFunded": 0
+  "amountFunded": 0,
+  "img": "https://www-kiva-org-0.global.ssl.fastly.net/img/w960/279626050e192bd13187c130ce2675d2.jpg"
   }, {
   "title": "ingredients for restaurant",
   "borrower": "Mustafa",
@@ -37,6 +41,7 @@
   "category": "food service",
   "region": "Africa",
   "description": "The path of the righteous man is beset on all sides by the iniquities of the selfish and the tyranny of evil men. Blessed is he who, in the name of charity and good will, shepherds the weak through the valley of darkness, for he is truly his brother's keeper and the finder of lost children. And I will strike down upon thee with great vengeance and furious anger those who would attempt to poison and destroy My brothers. And you will know My name is the Lord when I lay My vengeance upon thee. Now that we know who you are, I know who I am. I'm not a mistake! It all makes sense! In a comic, you know how you can tell who the arch-villain's going to be? He's the exact opposite of the hero. And most times they're friends, like you and me! I should've known way back when... You know why, David? Because of the kids. They called me Mr Glass.",
-  "amountFunded": 75
+  "amountFunded": 75,
+    "img": "https://www-kiva-org-1.global.ssl.fastly.net/img/w960/3b25a42278f489904230f29a3bb0a56e.jpg"
   }]
 }

@@ -1,6 +1,18 @@
-<p>
-  frontpage works!
-</p>
-<div class="" *ngFor="let project of projects |async">
-  <p (click)="viewProject(project)">{{project.title}}</p>
+<div class="row" >
+  <div class="col s4 m4" *ngFor="let project of projects |async">
+    <div class="card">
+      <div class="card-image">
+        <img src={{project.img}}>
+        <span class="card-title">{{project.title}}</span>
+      </div>
+      <div class="card-content">
+        <p>{{project.borrower}}</p>
+        <p>{{project.totalLoanAmount}}</p>
+        <p>{{project.region}}</p>
+      </div>
+      <div class="card-action">
+        <a (click)="viewProject(project)">View Details</a>
+      </div>
+    </div>
+  </div>
 </div>

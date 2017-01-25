@@ -18,9 +18,12 @@
       "prefix": "app",
       "mobile": false,
       "styles": [
+        "../bower_components/materialize/dist/css/materialize.css",
         "styles.css"
       ],
-      "scripts": [],
+      "scripts": [
+        "../bower_components/materialize/dist/js/materialize.js"
+      ],
       "environments": {
         "source": "environments/environment.ts",
         "dev": "environments/environment.ts",
