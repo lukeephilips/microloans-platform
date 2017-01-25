@@ -2,5 +2,5 @@
   frontpage works!
 </p>
 <div class="" *ngFor="let project of projects |async">
-  <p>{{project.title}}</p>
+  <p (click)="viewProject(project)">{{project.title}}</p>
 </div>

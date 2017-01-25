@@ -1,3 +1,11 @@
-<p>
-  project-detail works!
-</p>
+<div class="">
+  <h2>{{(projectToDisplay | async)?.title}}</h2>
+  <h3>Borrower: {{(projectToDisplay | async)?.borrower}}</h3>
+  <h4>Loan Amount: {{(projectToDisplay | async)?.totalLoanAmount}}</h4>
+  <h4>Region: {{(projectToDisplay | async)?.region}}</h4>
+  <h5>Category: {{(projectToDisplay | async)?.category}}</h5>
+  <!-- <img src={{(projectToDisplay | async)?.image}}> -->
+  <h5>${{(projectToDisplay | async)?.amountFunded}} funded of total ${{(projectToDisplay | async)?.totalLoanAmount}}</h5>
+
+  <p>{{(projectToDisplay | async)?.description}}</p>
+</div>

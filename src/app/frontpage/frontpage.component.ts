@@ -17,5 +17,8 @@ export class FrontpageComponent implements OnInit {
   ngOnInit() {
     this.projects = this.projectService.getProjects();
   }
+  viewProject(project){
+    this.router.navigate(['projects', project.$key]);
+  }
 
 }
