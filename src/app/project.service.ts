@@ -24,7 +24,10 @@ export class ProjectService {
     var projectEntryInFirebase = this.getProjectByKey(currentProject.$key);
     projectEntryInFirebase.update({amountFunded: newAmountFunded});
     console.log(currentProject);
-
+  }
+  deleteProject(projectToDelete){
+    var projectEntryInFirebase = this.getProjectByKey(projectToDelete.$key);
+    projectEntryInFirebase.remove();
   }
 
 

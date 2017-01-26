@@ -1,0 +1,4 @@
+<div class="fundedContainer">
+  <div class="fundedBar" [style.width.px]="calcPercent(((projectToDisplay | async)?.totalLoanAmount),((projectToDisplay | async)?.amountFunded))">
+  </div>
+</div>

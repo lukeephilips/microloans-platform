@@ -1,0 +1,5 @@
+frontpage
+[style.width.px]="calcPercent(fundedBarProject.totalLoanAmount, fundedBarProject.amountFunded)"
+
+detail
+[style.width.px]="calcPercent(((fundedBarProject | async)?.totalLoanAmount),((fundedBarProject | async)?.amountFunded))

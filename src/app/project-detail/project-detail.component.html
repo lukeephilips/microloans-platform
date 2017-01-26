@@ -17,10 +17,8 @@
   </div>
   <hr>
   <p class="description">{{(projectToDisplay | async)?.description}}</p>
-  <div class="fundedContainer">
-    <div class="fundedBar" [style.width.px]="calcPercent(((projectToDisplay | async)?.totalLoanAmount),((projectToDisplay | async)?.amountFunded))">
-    </div>
-  </div>
+  <funded-bar [projectToDisplay] = 'projectToDisplay'></funded-bar>
+
   <h6>Amount Funded: ${{(projectToDisplay | async)?.amountFunded}} of ${{(projectToDisplay | async)?.totalLoanAmount}}</h6>
   <edit-amount-funded [projectToDisplay] = 'projectToDisplay'></edit-amount-funded>
 </div>
