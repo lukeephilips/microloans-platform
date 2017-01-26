@@ -11,9 +11,10 @@ import { Router } from '@angular/router';
   providers: [ProjectService]
 })
 export class FrontpageComponent implements OnInit {
+  filterByRegionValue: any = "All"
   projects: FirebaseListObservable<any[]>;
   constructor(private router: Router, private projectService: ProjectService) { }
-  currentRoute: string = this.router.url; 
+  currentRoute: string = this.router.url;
   ngOnInit() {
     this.projects = this.projectService.getProjects();
   }
@@ -23,6 +24,9 @@ export class FrontpageComponent implements OnInit {
   deleteSelectedProject(project){
     if(confirm("Are you sure?")){
     this.projectService.deleteProject(project);
+    }
   }
+  filterByRegion(region) {
+    this.filterByRegionValue = region;
   }
 }

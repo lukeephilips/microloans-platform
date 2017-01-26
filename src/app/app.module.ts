@@ -14,6 +14,7 @@ import { AddProjectComponent } from './add-project/add-project.component';
 import { EditAmountFundedComponent } from './edit-amount-funded/edit-amount-funded.component';
 import { FundedBarComponent } from './funded-bar/funded-bar.component';
 import { AdminComponent } from './admin/admin.component';
+import { RegionPipe } from './region.pipe';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -31,7 +32,8 @@ export const firebaseConfig = {
     AddProjectComponent,
     EditAmountFundedComponent,
     FundedBarComponent,
-    AdminComponent
+    AdminComponent,
+    RegionPipe
   ],
   imports: [
     BrowserModule,
