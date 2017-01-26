@@ -29,4 +29,10 @@ export class FrontpageComponent implements OnInit {
   filterByRegion(region) {
     this.filterByRegionValue = region;
   }
+  calcPercent(project){
+    var total = project.totalLoanAmount;
+    var funded = project.amountFunded;
+    var i = this.projectService.calcPercent(total, funded);
+    console.log(i);
+  }
 }

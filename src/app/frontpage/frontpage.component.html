@@ -18,6 +18,7 @@
         <p>Borrower: {{project.borrower}}</p>
         <p>Loan Amount: {{project.totalLoanAmount}}</p>
         <p>Region: {{project.region}}</p>
+        <p>{{calcPercent(project)}}</p>
         <div *ngIf="currentRoute === '/admin'">
           <button class="btn" (click)="deleteSelectedProject(project)">Delete</button>
         </div>

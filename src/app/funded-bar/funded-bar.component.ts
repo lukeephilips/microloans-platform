@@ -3,6 +3,7 @@ import { AngularFire, FirebaseListObservable, FirebaseObjectObservable} from 'an
 import { Project } from '../project.model';
 import { ActivatedRoute } from '@angular/router';
 import { Router } from '@angular/router';
+import { ProjectService } from '../project.service';
 
 @Component({
   selector: 'funded-bar',
@@ -19,17 +20,13 @@ export class FundedBarComponent implements OnInit {
     }
   }
 
-  constructor(private route:ActivatedRoute, private router: Router) { }
+  constructor(private route:ActivatedRoute, private router: Router, private projectService: ProjectService) { }
 
   ngOnInit() {
     this.urlNormalize();
-    console.log(this.currentRoute)
   }
   calcPercent(total:any, funded:any){
-    console.log(total)
-    console.log(funded)
-
-    return funded/total*600;
+    return this.projectService.calcPercent(total, funded);
   }
 
 }

@@ -29,6 +29,7 @@ export class ProjectService {
     var projectEntryInFirebase = this.getProjectByKey(projectToDelete.$key);
     projectEntryInFirebase.remove();
   }
-
-
+  calcPercent(total:any, funded:any){
+    return funded/total*100;
+  }
 }
