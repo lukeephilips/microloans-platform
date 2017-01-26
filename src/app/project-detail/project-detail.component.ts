@@ -29,10 +29,4 @@ export class ProjectDetailComponent implements OnInit {
   calcPercent(total:any, funded:any){
     return funded/total*600;
   }
-  lendMoney(amount: number){
-    console.log(amount);
-    console.log(this.projectToDisplay)
-  }
-
-
 }

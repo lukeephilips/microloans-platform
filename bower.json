@@ -3,7 +3,7 @@
   "description": "",
   "main": "",
   "license": "MIT",
-  "homepage": "",
+  "homepage": "https://github.com/brianpritt/angular-kiva",
   "ignore": [
     "**/.*",
     "node_modules",

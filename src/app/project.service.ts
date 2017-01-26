@@ -19,5 +19,13 @@ export class ProjectService {
   getProjectByKey(key:string){
     return this.angularFire.database.object('projects/' + key);
   }
+  updateAmountFunded(currentProject, loanAmount: number) {
+    var newAmountFunded =  currentProject.amountFunded + loanAmount;
+    var projectEntryInFirebase = this.getProjectByKey(currentProject.$key);
+    projectEntryInFirebase.update({amountFunded: newAmountFunded});
+    console.log(currentProject);
+
+  }
+
 
 }

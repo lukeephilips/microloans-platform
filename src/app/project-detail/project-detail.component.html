@@ -17,26 +17,10 @@
   </div>
   <hr>
   <p class="description">{{(projectToDisplay | async)?.description}}</p>
-<div class="fundedContainer">
-  <div class="fundedBar" [style.width.px]="calcPercent(((projectToDisplay | async)?.totalLoanAmount),((projectToDisplay | async)?.amountFunded))">
+  <div class="fundedContainer">
+    <div class="fundedBar" [style.width.px]="calcPercent(((projectToDisplay | async)?.totalLoanAmount),((projectToDisplay | async)?.amountFunded))">
+    </div>
   </div>
-</div>
-<h6>Amount Funded: ${{(projectToDisplay | async)?.amountFunded}} of ${{(projectToDisplay | async)?.totalLoanAmount}}</h6>
-<div class="">
-
-  <select class="select" #selectValue>
-    <option [value]=10 selected="selected">$10</option>
-    <option [value]=20>$20</option>
-    <option [value]=50>$50</option>
-    <option [value]=100>$100</option>
-  </select>
-
-  <button class="btn" (click)="lendMoney(selectValue.value)">Lend</button>
-  <!-- <button class="btn" (click)="lendMoney(5)">Lend $5</button>
-  <button class="btn" (click)="lendMoney(10)">Lend $10</button>
-  <button class="btn" (click)="lendMoney(20)">Lend $20</button>
-  <button class="btn" (click)="lendMoney(50)">Lend $50</button> -->
-
-</div>
-
+  <h6>Amount Funded: ${{(projectToDisplay | async)?.amountFunded}} of ${{(projectToDisplay | async)?.totalLoanAmount}}</h6>
+  <edit-amount-funded [projectToDisplay] = 'projectToDisplay'></edit-amount-funded>
 </div>

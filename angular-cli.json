@@ -22,7 +22,6 @@
         "styles.css"
       ],
       "scripts": [
-        "../bower_components/materialize/dist/js/materialize.js"
       ],
       "environments": {
         "source": "environments/environment.ts",
