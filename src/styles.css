@@ -1,13 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
 .fundedBar{
-  /*width: 400px;*/
   height: 20px;
   background-color: lightgreen;
   border-radius: 8px;
 }
 .fundedContainer {
   height: 24px;
-  width: 604px;
+  width: 75%;
   border: 2px solid darkgreen;
   border-radius: 8px;
 }

@@ -23,10 +23,6 @@ export class ProjectDetailComponent implements OnInit {
     this.route.params.forEach((urlParameters) =>{
       this.projectKey = urlParameters['key']
       this.projectToDisplay = this.projectService.getProjectByKey(this.projectKey);
-      console.log(this.projectToDisplay)
     });
-  }
-  calcPercent(total:any, funded:any){
-    this.projectService.calcPercent(total, funded);
   }
 }

@@ -1,3 +1,18 @@
 img {
   height: 300px;
 }
+#none{
+  width: 0%;
+}
+#slightly{
+  width: 25%;
+}
+#somewhat {
+  width: 50%;
+}
+#mostly{
+  width: 75%;
+}
+#all{
+  width: 100%;
+}

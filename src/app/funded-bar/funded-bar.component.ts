@@ -11,22 +11,18 @@ import { ProjectService } from '../project.service';
   styleUrls: ['./funded-bar.component.css']
 })
 export class FundedBarComponent implements OnInit {
-  @Input() projectToDisplay: FirebaseListObservable<any>;
+  @Input() projectToDisplay: any;
   currentRoute = this.router.url;
-
-  urlNormalize(){
-    if (this.currentRoute === '/'){
-      this.currentRoute = 'home';
-    }
-  }
 
   constructor(private route:ActivatedRoute, private router: Router, private projectService: ProjectService) { }
 
   ngOnInit() {
-    this.urlNormalize();
   }
   calcPercent(total:any, funded:any){
-    return this.projectService.calcPercent(total, funded);
+    if(total !== null && funded !== null) {
+      var percent = this.projectService.calcPercent(total, funded);
+      return percent;
+    }
   }
 
 }

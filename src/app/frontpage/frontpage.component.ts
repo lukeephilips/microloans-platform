@@ -29,10 +29,18 @@ export class FrontpageComponent implements OnInit {
   filterByRegion(region) {
     this.filterByRegionValue = region;
   }
-  calcPercent(project){
-    var total = project.totalLoanAmount;
-    var funded = project.amountFunded;
-    var i = this.projectService.calcPercent(total, funded);
-    console.log(i);
+  calcPercentFront(total, current){
+    let percent = current/total*100;
+    if (percent >= 99){
+      return "all"
+    } else if (percent >= 75) {
+      return "mostly"
+    } else if (percent >= 50) {
+      return "somewhat"
+    } else if (percent >= 25) {
+      return "slightly"
+    } else {
+      return "none"
+    }
   }
 }
