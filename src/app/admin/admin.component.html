@@ -1,1 +1,38 @@
-<app-frontpage></app-frontpage>
+<div class="" *ngIf="projectToEdit">
+  <h3>Add New Project</h3>
+
+  <label>Title </label>
+  <input [(ngModel)]=projectToEdit.title>
+
+  <label>Description</label>
+  <textarea [(ngModel)]=projectToEdit.description></textarea>
+
+  <label>Borrower</label>
+  <input [(ngModel)]=projectToEdit.borrower>
+
+  <label>Total Amount </label>
+  <input [(ngModel)]=projectToEdit.totalLoanAmount type="number">
+
+  <label>Image</label>
+  <input [(ngModel)]=projectToEdit.img>
+
+  <label>Region</label>
+  <select [(ngModel)]=projectToEdit.region class="select drop-down input-field">
+    <option value="Africa">Africa</option>
+    <option value="India">India</option>
+    <option value="LatinAmerica">Latin America</option>
+    <option value="SEAsia">SE Asia</option>
+    <option value="SouthAmerica">South America</option>
+    <option value="Asia">Asia</option>
+  </select>
+
+  <label>Category</label>
+  <select class="select drop-down input-field" [(ngModel)]=projectToEdit.category>
+    <option value="Agriculture">Agriculture</option>
+    <option value="Retail">Retail</option>
+    <option value="FoodService">Food Service</option>
+  </select>
+
+  <button class="btn" (click)="startUpdating(projectToEdit); doneEditing()">Done</button>
+</div>
+<app-frontpage (editProjectToSend)="editProject($event)"></app-frontpage>

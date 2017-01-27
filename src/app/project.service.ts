@@ -31,4 +31,14 @@ export class ProjectService {
   calcPercent(total:any, funded:any){
     return funded/total*100;
   }
+  updateProject(localProject){
+    var projectEntryInFirebase = this.getProjectByKey(localProject.$key);
+    projectEntryInFirebase.update(
+      {title: localProject.title,
+        description: localProject.description,
+        borrower: localProject.borrower,
+        totalLoanAmount: localProject.totalLoanAmount,
+        region: localProject.region,
+        category: localProject.category});
+  }
 }

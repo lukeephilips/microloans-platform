@@ -11,6 +11,8 @@ import { Router } from '@angular/router';
   providers: [ProjectService]
 })
 export class FrontpageComponent implements OnInit {
+  @Output() editProjectToSend = new EventEmitter();
+
   filterByRegionValue: any = "All"
   projects: FirebaseListObservable<any[]>;
   constructor(private router: Router, private projectService: ProjectService) { }
@@ -39,8 +41,13 @@ export class FrontpageComponent implements OnInit {
       return "somewhat"
     } else if (percent >= 25) {
       return "slightly"
-    } else {
+    } else if (percent >= 1){
+      return "little"
+    }else {
       return "none"
     }
+  }
+  editProject(project){
+    this.editProjectToSend.emit(project)
   }
 }

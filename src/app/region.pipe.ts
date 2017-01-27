@@ -16,7 +16,7 @@ export class RegionPipe implements PipeTransform {
             output.push(input[i]);
           }
         }
-        return output;
+        return this.sort(output);
       }
       else if (desiredRegion === "Africa"){
         for (let i = 0; i < input.length; i++){
@@ -24,7 +24,7 @@ export class RegionPipe implements PipeTransform {
             output.push(input[i]);
           }
         }
-        return output;
+        return this.sort(output);
       }
       else if (desiredRegion === "Latin America"){
         for (let i = 0; i < input.length; i++){
@@ -32,11 +32,17 @@ export class RegionPipe implements PipeTransform {
             output.push(input[i]);
           }
         }
-        return output;
+        return this.sort(output);
       }
       else {
-        return input;
+        return this.sort(input);
       }
     }
+  }
+  sort(output: Project[]){
+    Project
+    return output.sort(function(a,b){
+      return (a.amountFunded/a.totalLoanAmount) - (b.amountFunded/b.totalLoanAmount);
+    });
   }
 }

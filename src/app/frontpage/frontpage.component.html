@@ -23,7 +23,8 @@
           </div>
         </div>
         <div *ngIf="currentRoute === '/admin'">
-          <button class="btn" (click)="deleteSelectedProject(project)">Delete</button>
+          <button class="btn red darken-4" (click)="deleteSelectedProject(project)">Delete</button>
+          <button class="btn blue darken-3" (click)="editProject(project)">Edit</button>
         </div>
       </div>
     </div>
